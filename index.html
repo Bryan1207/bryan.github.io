@@ -14,70 +14,243 @@
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-         <h1 id="project_title">Bryan Hernandez</h1>
-          <h2 id="project_tagline">Jr. Web Developer</h2>
-        </header>
-    </div>
+      <!-- CSS Style -->
+      <style type="text/css">
+        body {
+          font-family: 'Raleway', Helvetica, Arial, sans-serif;
+          font-weight: 400;
+          background-color: rgba(0, 0, 0, 0.02);
+        }
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a></h3>
+        .button {
+          font-family: 'Raleway', Helvetica, Arial, sans-serif; 
+        }
 
-<p>An energetic and imaginative young web developer who is able to
-work alongside other talented IT professionals in creating websites
-to the very highest standards. looking for an entry level position with an exciting company that wants to attract talented people. </p>
+        .button-group li{ 
+          padding-top: 3%;
+        }
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Skills</h3>
+        .button-group a{
+          color: rgba(0, 0, 0, 1);
+          background-color: transparent;
+        }
 
-<p>Languages:   JavaScript,Ruby, HTML,CSS<br>
-Frameworks:   Node.js, Express JS,Angular, CoffeeScript, Rails <br>
-Database Tools:  SQL,PostgreSQL,Sequelize,ActiveRecord, <br>Authorization:Passport Local,Bcrypt <br>
-Testing Frameworks:   Mocha, Chai,RSpec <br>
-Other:    Git, GitHub, Heroku, jQuery, AJAX,  JSON, Bootstrap, </p>
+        .button-group a:hover {
+          color: rgba(0, 0, 0, 0.4);
+          background-color: transparent;
+        }
 
-<h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a></h3>
-<p></p>
+        .button-group{
+          float: none;
+        }
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Experience</h3>
+        @media only screen and (min-width: 40.063em) {
+          .button-group{
+            float: right;
+          }
+        }
 
-<p>Web Development Immersive | General Assembly July – September 2014<br>
-https://github.com/Bryan1207/doyoueven<br>
-Do you even?<br>
-Languages used : Javascript, Html + css<br>
-Database: Postgres<br>
-Summary: Created a fitness community with Q/A board to discuss fitness/health related topics.</p>
+        .namelogo {
+          padding: 20px 10px 0px 10px;
+        }
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Education</h3>
+        @media only screen and (min-width: 40.063em) {
+          .namelogo {
+            padding-bottom: 20px;
+          }
+        }
 
-<p>General Assembly, San Francisco<br> 
-Web Development Immersive<br>
-General Assembly's Web Development Immersive is a full-time 12-week course which covers the full stack in JavaScript<br> and Ruby, with the goal of preparing students with a solid skill set to enter the workforce as trained developers.<br>
+        .namelogo h1 {
+          font-size: 1.5em;
+          font-weight: 600;
+          text-align: center;
+        }
 
-A.A Computer and Information Technology (Expected Dec 2016 )<br>
-Evergreen Valley College, San Jose, CA</p>
-      </section>
-    </div>
+        @media only screen and (min-width: 40.063em) {
+          .namelogo h1 {
+            font-size: 16px;
+            text-align: left;
+          }
+        }
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">maintained by <a href="https://github.com/Bryan1207">Bryan1207</a><br>
-        <p>Work in progress first commit 1/13/15</p>
+        @media only screen and (min-width: 64.063em) {
+          .namelogo h1 {
+            font-size: 24px;
+            text-align: left;
+          }
+        }
 
-        </p>
+        .hero{
+          background: url(http://placehold.it/900x800);
+          background-size: cover;
+          box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.15);
+          height: 80%;
+        }
 
+        .intro-text {
+          padding-top: 40%;
+          color: rgba(255, 255, 255, 1);
+          text-align: center;
+        }
+
+        @media only screen and (min-width: 40.063em) {
+          .intro-text{
+            padding-top: 25%;
+          }
+        }
+
+        @media only screen and (min-width: 64.063em) {
+          .intro-text{
+            padding-top: 18%;
+          }
+        }
+
+        .intro-text p{
+          font-family: 'Shadows Into Light', cursive;
+          font-size: 44px;
+        }
+
+        .about, .work, .contact {
+          padding: 50px 0 0 0;
+        }
+
+        .about img{
+          width: 250px;
+          height: 250px;
+          border-radius: 150px;
+          -webkit-border-radius: 150px;
+          -moz-border-radius: 150px;  
+        }
+
+        .work img:hover {
+          opacity: 0.5;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -ms-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease;
+        }
+
+        .work li {
+          height: 140px;
+          overflow: hidden; 
+        }
+
+        hr {
+          border: 0;
+          height: 1px;
+          background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+          background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+          background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+          background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+          opacity: 0.8;
+        }
+
+        footer {
+          padding: 80px 0 10px 0;
+        }
+
+        footer a:hover {
+          color: rgba(0, 0, 0, 0.4);
+          background-color: transparent;
+        }
+      </style>
+
+      <!-- HTML -->
+      <div class="row">
+        <div class="small-12 medium-4 large-6 columns namelogo">
+          <h1>Name/Logo/Brand</h1>
+        </div>
+        <div class="small-12 medium-8 large-6 columns">
+          <div class="nav-bar">
+            <ul class="button-group">
+            <li><a href="#" class="button">About</a></li>
+            <li><a href="#" class="button">Work</a></li>
+            <li><a href="#" class="button">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
+      <div class="hero">
+        <div class="row">
+          <div class="large-12 columns intro-text">
+            <p>Hi there!<br>I take outdoor pictures.</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="row about">
+        <div class="medium-6 large-8 columns">
+          <h4>About</h4>
+          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+        </div>
+        <div class="medium-6 large-4 columns">
+          <img src="http://placehold.it/550x300">
+        </div>
+      </div>
+
+      <div class="row work">
+        <hr>
+        <div class="large-12 columns">
+          <h4>Work</h4>
+          <p>Click on each image to view my work!</p>
+
+          <ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4" data-clearing>
+            <li>
+              <a href="http://placehold.it/550x300">
+              <img data-caption="caption here" src="http://placehold.it/550x300"></a>
+            </li>
+            <li>
+              <a href="http://placehold.it/550x300"><img data-caption="caption 2 here..." src="http://placehold.it/550x300"></a>
+            </li>
+            <li>
+              <a href="http://placehold.it/550x300"><img data-caption="caption 3 here..." src="http://placehold.it/550x300"></a>
+            </li>
+            <li>
+              <a href="http://placehold.it/550x300"><img data-caption="caption 4 here..." src="http://placehold.it/550x300"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row contact">
+        <hr>
+        <div class="large-12 columns">
+          <h4>Contact Me</h4>
+          <div class="large-4 columns">
+            <strong>Email</strong>: <a href="#"><span class="__cf_email__" data-cfemail="64090124091d140b1610020b080d0b4a070b09">[email protected]</span><script cf-hash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></a>
+          </div>
+          <div class="large-4 columns">
+            <strong>Twitter</strong>: @twitterhandle
+          </div>
+          <div class="large-4 columns">
+            <strong>Phone</strong>: 555-555-1234
+          </div>
+        </div>
+      </div>
+
+      <footer class="row">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="large-6 columns">
+              <p>© Copyright no one at all. Go to town.</p>
+            </div>
+            <div class="large-6 columns">
+              <ul class="inline-list right">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Suscribe</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </footer>
-    </div>
-
+      
+      <!-- For Clearing, Add to Script -->
+      <script src="js/foundation/foundation.clearing.js"></script>
+    
     
 
   </body>
